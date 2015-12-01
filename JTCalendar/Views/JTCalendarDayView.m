@@ -85,7 +85,7 @@
 {
     _textLabel.frame = self.bounds;
 
-    CALayer *layer = self.layer.presentationLayer;
+    CALayer *layer = self.layer;
     CGRect presentationFrame = layer.frame;
 
     CGFloat sizeCircle = MIN(presentationFrame.size.width, presentationFrame.size.height);
