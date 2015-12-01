@@ -16,3 +16,4 @@
 #import "JTCalendarWeekDayView.h"
 #import "JTCalendarWeekView.h"
 #import "JTCalendarDayView.h"
+#import "JTCircleView.h"

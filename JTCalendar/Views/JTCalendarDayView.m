@@ -8,6 +8,7 @@
 #import "JTCalendarDayView.h"
 
 #import "JTCalendarManager.h"
+#import "JTCircleView.h"
 
 @implementation JTCalendarDayView
 
@@ -43,7 +44,7 @@
     _dotRatio = 1. / 9.;
     
     {
-        _circleView = [UIView new];
+        _circleView = [JTCircleView new];
         [self addSubview:_circleView];
         
         _circleView.backgroundColor = [UIColor colorWithRed:0x33/256. green:0xB3/256. blue:0xEC/256. alpha:.5];
@@ -54,7 +55,7 @@
     }
     
     {
-        _dotView = [UIView new];
+        _dotView = [JTCircleView new];
         [self addSubview:_dotView];
         
         _dotView.backgroundColor = [UIColor redColor];
@@ -85,10 +86,7 @@
 {
     _textLabel.frame = self.bounds;
 
-    CALayer *layer = self.layer;
-    CGRect presentationFrame = layer.frame;
-
-    CGFloat sizeCircle = MIN(presentationFrame.size.width, presentationFrame.size.height);
+    CGFloat sizeCircle = MIN(self.frame.size.width, self.frame.size.height);
     CGFloat sizeDot = sizeCircle;
     
     sizeCircle = sizeCircle * _circleRatio;
@@ -98,12 +96,10 @@
     sizeDot = roundf(sizeDot);
 
     _circleView.frame = CGRectMake(0, 0, sizeCircle, sizeCircle);
-    _circleView.center = CGPointMake(presentationFrame.size.width / 2., presentationFrame.size.height / 2.);
-    _circleView.layer.cornerRadius = sizeCircle / 2.;
-    
+    _circleView.center = CGPointMake(self.frame.size.width / 2., self.frame.size.height / 2.);
+
     _dotView.frame = CGRectMake(0, 0, sizeDot, sizeDot);
-    _dotView.center = CGPointMake(presentationFrame.size.width / 2., (presentationFrame.size.height / 2.) +sizeDot * 2.5);
-    _dotView.layer.cornerRadius = sizeDot / 2.;
+    _dotView.center = CGPointMake(self.frame.size.width / 2., (self.frame.size.height / 2.) +sizeDot * 2.5);
 }
 
 - (void)setDate:(NSDate *)date
