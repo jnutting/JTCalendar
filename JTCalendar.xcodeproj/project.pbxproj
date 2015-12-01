@@ -40,6 +40,8 @@
 		043D75161C0C4526004ADC31 /* JTCalendarSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 043D750F1C0C4526004ADC31 /* JTCalendarSettings.m */; };
 		043D75171C0C4526004ADC31 /* JTDateHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 043D75101C0C4526004ADC31 /* JTDateHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		043D75181C0C4526004ADC31 /* JTDateHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 043D75111C0C4526004ADC31 /* JTDateHelper.m */; };
+		0468658B1C0DE42D003B597D /* JTCircleView.h in Headers */ = {isa = PBXBuildFile; fileRef = 046865891C0DE42D003B597D /* JTCircleView.h */; };
+		0468658C1C0DE42D003B597D /* JTCircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0468658A1C0DE42D003B597D /* JTCircleView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +90,8 @@
 		043D750F1C0C4526004ADC31 /* JTCalendarSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTCalendarSettings.m; sourceTree = "<group>"; };
 		043D75101C0C4526004ADC31 /* JTDateHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTDateHelper.h; sourceTree = "<group>"; };
 		043D75111C0C4526004ADC31 /* JTDateHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTDateHelper.m; sourceTree = "<group>"; };
+		046865891C0DE42D003B597D /* JTCircleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTCircleView.h; sourceTree = "<group>"; };
+		0468658A1C0DE42D003B597D /* JTCircleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTCircleView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -186,6 +190,8 @@
 				043D74E61C0C427D004ADC31 /* JTHorizontalCalendarView.m */,
 				043D74E71C0C427D004ADC31 /* JTVerticalCalendarView.h */,
 				043D74E81C0C427D004ADC31 /* JTVerticalCalendarView.m */,
+				046865891C0DE42D003B597D /* JTCircleView.h */,
+				0468658A1C0DE42D003B597D /* JTCircleView.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -212,6 +218,7 @@
 				043D75121C0C4526004ADC31 /* JTCalendarDelegate.h in Headers */,
 				043D75021C0C428A004ADC31 /* JTMenu.h in Headers */,
 				043D75131C0C4526004ADC31 /* JTCalendarManager.h in Headers */,
+				0468658B1C0DE42D003B597D /* JTCircleView.h in Headers */,
 				043D74FE1C0C428A004ADC31 /* JTCalendarPage.h in Headers */,
 				043D74C21C0C4198004ADC31 /* JTCalendar.h in Headers */,
 				043D75071C0C429D004ADC31 /* JTCalendarDelegateManager.h in Headers */,
@@ -328,6 +335,7 @@
 				043D75181C0C4526004ADC31 /* JTDateHelper.m in Sources */,
 				043D74EE1C0C427D004ADC31 /* JTCalendarPageView.m in Sources */,
 				043D74F01C0C427D004ADC31 /* JTCalendarWeekDayView.m in Sources */,
+				0468658C1C0DE42D003B597D /* JTCircleView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
