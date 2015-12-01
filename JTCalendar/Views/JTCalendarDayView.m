@@ -84,8 +84,11 @@
 - (void)layoutSubviews
 {
     _textLabel.frame = self.bounds;
-    
-    CGFloat sizeCircle = MIN(self.frame.size.width, self.frame.size.height);
+
+    CALayer *layer = self.layer.presentationLayer;
+    CGRect presentationFrame = layer.frame;
+
+    CGFloat sizeCircle = MIN(presentationFrame.size.width, presentationFrame.size.height);
     CGFloat sizeDot = sizeCircle;
     
     sizeCircle = sizeCircle * _circleRatio;
@@ -93,13 +96,13 @@
     
     sizeCircle = roundf(sizeCircle);
     sizeDot = roundf(sizeDot);
-    
+
     _circleView.frame = CGRectMake(0, 0, sizeCircle, sizeCircle);
-    _circleView.center = CGPointMake(self.frame.size.width / 2., self.frame.size.height / 2.);
+    _circleView.center = CGPointMake(presentationFrame.size.width / 2., presentationFrame.size.height / 2.);
     _circleView.layer.cornerRadius = sizeCircle / 2.;
     
     _dotView.frame = CGRectMake(0, 0, sizeDot, sizeDot);
-    _dotView.center = CGPointMake(self.frame.size.width / 2., (self.frame.size.height / 2.) +sizeDot * 2.5);
+    _dotView.center = CGPointMake(presentationFrame.size.width / 2., (presentationFrame.size.height / 2.) +sizeDot * 2.5);
     _dotView.layer.cornerRadius = sizeDot / 2.;
 }
 
