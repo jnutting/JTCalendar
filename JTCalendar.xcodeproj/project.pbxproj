@@ -40,7 +40,7 @@
 		043D75161C0C4526004ADC31 /* JTCalendarSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 043D750F1C0C4526004ADC31 /* JTCalendarSettings.m */; };
 		043D75171C0C4526004ADC31 /* JTDateHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 043D75101C0C4526004ADC31 /* JTDateHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		043D75181C0C4526004ADC31 /* JTDateHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 043D75111C0C4526004ADC31 /* JTDateHelper.m */; };
-		0468658B1C0DE42D003B597D /* JTCircleView.h in Headers */ = {isa = PBXBuildFile; fileRef = 046865891C0DE42D003B597D /* JTCircleView.h */; };
+		0468658B1C0DE42D003B597D /* JTCircleView.h in Headers */ = {isa = PBXBuildFile; fileRef = 046865891C0DE42D003B597D /* JTCircleView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0468658C1C0DE42D003B597D /* JTCircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0468658A1C0DE42D003B597D /* JTCircleView.m */; };
 /* End PBXBuildFile section */
 
